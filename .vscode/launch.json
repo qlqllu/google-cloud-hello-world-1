@@ -1,6 +1,18 @@
 {
     "configurations": [
       {
+        "name": "debug",
+        "program": "${workspaceFolder}/node_modules/.bin/functions-framework",
+        "request": "launch",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "node",
+        "args": [
+          "--target=helloHttp"
+        ]
+      },
+      {
         "name": "Deploy Cloud Function",
         "type": "cloudcode.cloudfunctions",
         "request": "launch",

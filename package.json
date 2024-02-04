@@ -4,6 +4,10 @@
     "private": true,
     "license": "Apache-2.0",
     "author": "Google Inc.",
+    "scripts": {
+      "start": "npx functions-framework --target=helloHttp",
+      "debug": "node --inspect node_modules/.bin/functions-framework --target=helloHttp"
+    },
     "dependencies": {
       "@google-cloud/functions-framework": "^3.1.0"
     }
