@@ -1,0 +1,28 @@
+{
+    "configurations": [
+      {
+        "name": "debug",
+        "program": "${workspaceFolder}/node_modules/@google-cloud/functions-framework/build/src/main.js",
+        "request": "launch",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "node",
+        "args": [
+          " --target=helloHttp"
+        ],
+      },
+      {
+        "name": "Deploy Cloud Function - helloworld",
+        "type": "cloudcode.cloudfunctions",
+        "request": "launch",
+        "functionName": "function-hello-world",
+        "gen": "GEN_2",
+        "revision": "function-hello-world-00002-kay",
+        "entryPoint": "helloHttp",
+        "testInput": "hello-1",
+        "region": "asia-east1",
+        "runtime": "nodejs18"
+      }
+    ]
+}
